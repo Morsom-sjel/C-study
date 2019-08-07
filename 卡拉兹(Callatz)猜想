@@ -12,11 +12,13 @@ while(n!=1)
     {
         n=n/2;
         m++;
+        continue;
     }
     else
     {
         n=(3*n+1)/2;
         m++;
+        continue;
     }  
 }
     
