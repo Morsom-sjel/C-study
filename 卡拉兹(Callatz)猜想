@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int n,m=0;
+
+    printf("请输入一个不超过1000的正整数：");
+    scanf("%d",&n);
+    if(n>>1000&&n<<0)
+	{
+		printf("输入错误，请重新输入！\n");
+	printf("请输入一个不超过1000的正整数：");
+    scanf("%d",&n);
+	}
+while(n!=1)
+{
+   if(n%2==0)
+    {
+        n=n/2;
+        m++;
+    }
+    else
+    {
+        n=(3*n+1)/2;
+        m++;
+    }  
+}
+    
+
+    printf("需要 %d 步可以得到n=1"，m);
+    return 0;
+}
